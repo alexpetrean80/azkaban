@@ -1,3 +1,5 @@
+# DockerHub link
+https://hub.docker.com/repository/docker/p4df00t/azkaban#
 # What is this?
 This is a dockerfile which creates a custom image based on the parrotsec/security docker image to suit me. It adds some tools which are not directly available in the official image, a bit of rice, and tries to keep it a bit more up to date.
 # Extra programs
@@ -8,9 +10,6 @@ This is a dockerfile which creates a custom image based on the parrotsec/securit
 # Other modifications
 - zsh plugins to make life easier via antigen.zsh
 - different prompt from the default parrot one
-
-# On DockerHub
-It can be pulled with tag p4df00t/azkaban:latest
 
 # How to run
 I recommend running this in the same way that the ParrotOS team does:
