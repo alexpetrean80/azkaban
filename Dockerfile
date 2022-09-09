@@ -2,10 +2,14 @@ FROM parrotsec/security:latest
 
 WORKDIR /root
 
-RUN apt update 
-RUN apt full-upgrade -y
+RUN apt-get update 
+RUN apt-get full-upgrade -y
 
-RUN apt install gobuster fzf exa zsh zsh-syntax-highlighting zsh-autosuggestions python3-pip -y
+COPY files/requirements.txt /tmp/requirements.txt
+COPY scripts/install_pkgs.sh /tmp/install_pkgs.sh
+RUN chmod +x /tmp/install_pkgs.sh
+RUN /tmp/install_pkgs.sh
+RUN rm /tmp/requirements.txt /tmp/install_pkgs.sh
 
 RUN pip3 install updog
 
