@@ -2,6 +2,8 @@ FROM parrotsec/security:latest
 
 WORKDIR /root
 
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+COPY files/microsoft.list /etc/apt/sources.list.d/microsoft.list
 RUN apt-get update 
 RUN apt-get full-upgrade -y
 
@@ -15,6 +17,6 @@ RUN pip3 install updog
 
 RUN mkdir /root/.antigen
 RUN curl -L git.io/antigen > /root/.antigen/antigen.zsh
-COPY files/root_zshrc /root/.zshrc
+COPY files/.zshrc /root/.zshrc
 
 ENTRYPOINT [ "zsh" ]
