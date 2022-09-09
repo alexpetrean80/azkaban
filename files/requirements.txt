@@ -2,6 +2,7 @@ bat
 exa
 fzf
 gobuster 
+powershell
 python3-pip
 sqlite
 zsh 
