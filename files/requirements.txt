@@ -1,0 +1,9 @@
+bat
+exa
+fzf
+gobuster 
+python3-pip
+sqlite
+zsh 
+zsh-syntax-highlighting 
+zsh-autosuggestions
