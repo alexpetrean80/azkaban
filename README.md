@@ -17,5 +17,5 @@ I recommend running this in the same way that the ParrotOS team does:
 docker run -ti -rm --network host -v $PWD/work:/root/work p4df00t/azkaban:latest
 ```
 # Disclaimers
-1. You can expect this dockerfile to be a WIP forever. It will most likely be updated periodically when I feel like modifying stuff. 
+1. You can expect this dockerfile to be a WIP forever. It will most likely be updated periodically when I feel like modifying stuff or when I discover new tools in my CyberSec journey. 
 2. The dockerfile can be used as is, as well as serve as a template for another person's personalized config.
